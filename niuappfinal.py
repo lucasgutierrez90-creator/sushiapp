@@ -1,5 +1,19 @@
 import streamlit as st
 import pandas as pd
+import streamlit as st
+
+# PARCHE PARA CELULARES ANTIGUOS
+st.components.v1.html("""
+<script>
+if (!Object.hasOwn) {
+    Object.hasOwn = function(obj, prop) {
+        return Object.prototype.hasOwnProperty.call(obj, prop);
+    };
+}
+</script>
+""", height=0)
+
+# ... aquí sigue el resto de tu código (import pandas, etc.)
 
 # Configuración de la página
 st.set_page_config(page_title="Niu Sushi Finder", page_icon="🍣")
